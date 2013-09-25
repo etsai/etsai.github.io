@@ -1,0 +1,9 @@
+comments :
+  provider : disqus
+  disqus :
+    short_name : etsaii
+
+analytics :
+  provider : google
+  google :
+      tracking_id : 'UA-40880392-1'
