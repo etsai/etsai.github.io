@@ -1,26 +1,15 @@
 ---
 layout: default
-title: etsaii
+title: "Home"
 ---
-<div>
-  <ul id="posts">
+<div class="nav">
+  <a href="https://github.com/etsai"><i class="icon-github-sign icon-large"></i></a>
+  <a href="https://twitter.com/etsaii"><i class="icon-twitter-sign icon-large"></i></a>
+  <a href="http://instagram.com/etsaii"><i class="icon-instagram icon-large"></i></a>
+  <a href="http://www.linkedin.com/in/etsai"><i class="icon-linkedin-sign icon-large"></i></a>
+  <a href="mailto:et.elainetsai@gmail.com"><i class="icon-envelope icon-large"></i></a>
+</div>
 
-    {% for post in site.posts %}
-
-    <div>
-    <li>
-      <h3>
-      {{ post.date | date_to_string }} --
-      <a href="{{ post.url }}">
-      {{ post.title }}
-      </a>
-      </h3>
-
-      {{ post.content }}
-
-    </div>
-
-    </li>
-    {% endfor %}
-  </ul>
+<div class="about">
+  {% markdown about.md %}
 </div>

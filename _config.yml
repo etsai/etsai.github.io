@@ -1,8 +1,18 @@
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: html
+editor: subl
+git:
+  branch: master
+permalink: pretty
+markdown: kramdown
 comments :
   provider : disqus
   disqus :
     short_name : etsaii
-
 analytics :
   provider : google
   google :

@@ -1,6 +1,0 @@
-Add Twitter icon
-About page
-Contain each post
-Put on domain
-Create RSS feed
-Create back button from Post pages

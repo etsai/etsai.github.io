@@ -6,19 +6,14 @@
 
 /* Global Reset */
 
-* {
-  margin: 0;
-  padding: 0;
-  }
-
 html, body {
   height: 100%;
-  background-image: url('/images/agsquare2X.png');
+  background-color: #EAEFF0;
 }
 
 body {
-  font: 20px;
-  font-family: 'Lato', sans-serif;
+  font: 14px;
+  font-family: 'Roboto Slab', serif;
   margin-left: 50px 0px;
   padding: 0px;
   text-align: center;
@@ -28,17 +23,19 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   line-height: 50px;
-  color: #253342;
+  color: #2c3d4f;
   font-family: 'Ubuntu', sans-serif;
   font-size: 18pt;
 }
 
 h1 {
-  margin-bottom: 1em;
+  margin-bottom: 0px;
+  margin-top: 20px;
 }
 
 h3 {
   font-size: 12pt;
+  margin: 0px auto;
 }
 
 p {
@@ -64,21 +61,8 @@ table {
 
 ul#posts {
   list-style-type: none;
-  width: 720px;
-  text-align: left;
+  padding: 0px;
 }
-
-  ul#posts li {
-    margin-bottom: 25px;
-    line-height: 2em;
-    background-color: #EAEFF0;
-    opacity: 0.8;
-    padding: 20px 45px;
-  }
-
-  ul#posts span {
-    color: #FFF;
-  }
 
 #menu {
   margin-bottom: 25px;
@@ -158,14 +142,51 @@ ul#posts {
 /* Posts
 /*
 /*****************************************************************************/
+.nav {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
 
-.post {
+.nav i {
+  margin-right: 10px;
+  color: #849eba;
+}
+
+.about {
+  background-color: white;
   margin: 0px auto;
   text-align: left;
-  background-color: #EAEFF0;
+  opacity: 0.8;
+  width: 720px;
+  padding: 10px 45px 20px 45px;
+}
+
+.button {
+  display: inline-block;
+  margin: 30px 55px 30px 55px;
+  background-color: #3CB874;
+
+}
+
+.button a {
+  padding: 30px;
+  font-size: 65px;
+  color: white;
+}
+.excerpt {
+  background-color: white;
+}
+.post {
+  background-color: white;
+  margin: 0px auto;
+  text-align: left;
   opacity: 0.8;
   width: 720px;
   padding: 20px 45px;
+}
+
+li.post{
+  margin-bottom: 25px;
 }
 
   /* standard */
@@ -202,12 +223,4 @@ ul#posts {
 
   .post pre.terminal code {
     background-color: #333;
-  }
-
-#related {
-  margin-top: 2em;
-}
-
-  #related h2 {
-    margin-bottom: 1em;
   }
