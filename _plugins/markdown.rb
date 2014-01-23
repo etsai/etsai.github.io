@@ -13,7 +13,10 @@ module Jekyll
     end
     require "kramdown"
     def render(context)
-      "#{Kramdown::Document.new(File.read(File.join(Dir.pwd, '_includes', @text))).to_html}"
+      tmpl = File.read File.join Dir.pwd, "_includes", @text
+      site = context.registers[:site]
+      tmpl = (Liquid::Template.parse tmpl).render site.site_payload
+      html = Kramdown::Document.new(tmpl).to_html
     end
   end
 end
