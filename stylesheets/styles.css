@@ -22,7 +22,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
-  line-height: 50px;
   color: #2c3d4f;
   font-family: 'Ubuntu', sans-serif;
   font-size: 18pt;
@@ -31,6 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   margin-bottom: 0px;
   margin-top: 20px;
+  line-height: 50px;
 }
 
 h3 {
@@ -62,95 +62,6 @@ footer {
 /* Home
 /*
 /*************************************r****************************************/
-
-ul#posts {
-  list-style-type: none;
-  padding: 0px;
-}
-
-#menu {
-  margin-bottom: 25px;
-}
-
-h1:nth-of-type(2), h1:nth-of-type(3){
-  margin-top: 100px;
-}
-
-/*****************************************************************************/
-/*
-/* Site
-/*
-/*****************************************************************************/
-
-.site {
-  font-size: 110%;
-  text-align: justify;
-  width: 40em;
-  margin: 3em auto 2em auto;
-  line-height: 1.5em;
-}
-
-.title {
-  color: #a00;
-  font-weight: bold;
-  margin-bottom: 2em;
-}
-
-  .site .title a {
-    color: #a00;
-    text-decoration: none;
-  }
-
-  .site .title a:hover {
-    color: black;
-  }
-
-  .site .title a.extra {
-    color: #aaa;
-    text-decoration: none;
-    margin-left: 1em;
-  }
-
-  .site .title a.extra:hover {
-    color: black;
-  }
-
-  .site .meta {
-    color: #aaa;
-  }
-
-  .site .footer {
-    font-size: 80%;
-    color: #666;
-    border-top: 4px solid #eee;
-    margin-top: 2em;
-    overflow: hidden;
-  }
-
-    .site .footer .contact {
-      float: left;
-      margin-right: 3em;
-    }
-
-      .site .footer .contact a {
-        color: #8085C1;
-      }
-
-    .site .footer .rss {
-      margin-top: 1.1em;
-      margin-right: -.2em;
-      float: right;
-    }
-
-      .site .footer .rss img {
-        border: 0;
-      }
-
-/*****************************************************************************/
-/*
-/* Posts
-/*
-/*****************************************************************************/
 .nav {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -175,27 +86,33 @@ h1:nth-of-type(2), h1:nth-of-type(3){
   padding: 10px 45px 20px 45px;
 }
 
-.button {
-  display: inline-block;
-  margin: 30px 55px 30px 55px;
-  background-color: #3CB874;
-}
-
-.button a {
-  padding: 30px;
-  font-size: 65px;
-  color: white;
-}
-.excerpt {
-  background-color: white;
-}
-.post {
+ul#posts {
+  list-style-type: none;
   background-color: white;
   margin: 0px auto;
+  margin-top: 50px;
   text-align: left;
   opacity: 0.8;
   width: 720px;
   padding: 20px 45px;
+}
+
+#menu {
+  margin-bottom: 25px;
+}
+
+h1:nth-of-type(2), h1:nth-of-type(3){
+  margin-top: 100px;
+}
+
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+
+.post {
+
 }
 
 li.post{
